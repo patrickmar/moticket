@@ -1,5 +1,4 @@
 import React from 'react';
-import { card5 } from '../assets';
 
 const Banner = ({ type1, type2, picture }) => {
   return (
@@ -22,7 +21,7 @@ const Banner = ({ type1, type2, picture }) => {
           type="search"
           id="search-dropdown"
           className="block  p-6 w-full z-20 md:py-4 px-2 py-2 text-sm text-gray-900 bg-gray-50 rounded-lg border-l-gray-50  border border-gray-300 focus:ring-blue-500 focus:border-blue-500 bg-white dark:border-l-gray-700  dark:border-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
-          placeholder="Keyword..."
+          placeholder="Search the Scene: Events, Venues,  Artists and Beyond…. x"
         />
         <button
           type="submit"

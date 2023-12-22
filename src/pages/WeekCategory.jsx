@@ -5,7 +5,7 @@ import { p11 } from '../assets';
 const WeekCategory = () => {
   return (
     <div>
-      <Card heading={'Events This Week'} image={p11} />
+      <Card heading={'THIS WEEK HIGHLIGHTS'} image={p11} />
     </div>
   );
 };

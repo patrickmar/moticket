@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { p1, p2, p3, p4, p5, p6, p7 } from '../assets';
 import { FaLocationDot, FaTicket } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
-import { FaMoneyBill } from 'react-icons/fa';
+import { MdArrowForwardIos } from 'react-icons/md';
 import { BsBuildings } from 'react-icons/bs';
 
 const data = [
@@ -70,23 +70,42 @@ const data = [
 const Card1 = () => {
   const CustomNextArrow = (props) => {
     const { onClick } = props;
+
     return (
-      <button
-        className="slick-next"
+      <div
+        className="slick-next-container "
         style={{
-          background: 'black', // Set the background color to black or any other desired color
-          borderRadius: '50%', // Optional: To make it circular
-          height: '40px',
-          width: '40px',
           display: 'flex',
-          justifyContent: 'center',
+          flexDirection: 'column',
           alignItems: 'center',
-          border: 'none',
-          outline: 'none',
           cursor: 'pointer',
         }}
-        onClick={onClick}
-      ></button>
+      >
+        <button
+          className="slick-next"
+          style={{
+            background: 'white', // Set the background color to white
+            borderRadius: '50%', // Optional: To make it circular
+            height: '60px',
+            width: '60px',
+            border: '2px solid black', // Set border color and width
+            marginBottom: '5px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+          onClick={onClick}
+        >
+          {/* MdArrowRight icon from react-icons */}
+          <MdArrowForwardIos
+            style={{ fontSize: '24px', color: 'black' }}
+            className="mx-auto"
+          />
+        </button>
+        <div style={{ fontSize: '12px', color: 'black', marginTop: '5px' }}>
+          See more
+        </div>
+      </div>
     );
   };
 
@@ -96,7 +115,7 @@ const Card1 = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    nextArrow: <CustomNextArrow />,
+    nextArrow: <CustomNextArrow className="text-primary" />,
   };
 
   const formatDate = (date) => {
@@ -111,8 +130,8 @@ const Card1 = () => {
 
   return (
     <section className="">
-      <h1 className="absolute mt-[-150px] font-semibold text-[24px]">
-        Events This Week
+      <h1 className="absolute mt-[-150px] font-semibold text-[24px] ml-8">
+        Trending Events
       </h1>
 
       <div className="w-3/4 m-auto mt-56 rounded-xl  border">
@@ -143,7 +162,7 @@ const Card1 = () => {
                 </div>
                 <div className="relative top-2 -left-20">
                   {' '}
-                  <Link to="/cart">
+                  <Link to="/details">
                     <button className="bg-secondary p-1 text-white rounded-xl">
                       Get Ticket
                     </button>

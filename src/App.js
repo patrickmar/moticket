@@ -5,6 +5,8 @@ import Navbar from './constants/Navbar';
 import Home from './pages/Home';
 import Events from './pages/Events';
 import Card1 from './components/Card1';
+import EventDetails from './pages/EventDetails';
+import Cart from './pages/Cart';
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
         <Route path="/" element={<Home />} />
 
         <Route path="/events" element={<Events />} />
-        <Route path="/details" element={<Card1 />} />
+        <Route path="/category" element={<Card1 />} />
+        <Route path="/details" element={<EventDetails />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
 
       <Footer />

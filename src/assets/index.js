@@ -13,11 +13,13 @@ import p6 from './p6.jpg';
 import p7 from './p7.jpg';
 import p8 from './p8.jpg';
 import p9 from './p9.png';
+import logo1 from './logo1.svg';
 
 export {
   card5,
   close,
   logo,
+  logo1,
   menu,
   p1,
   p2,
