@@ -46,5 +46,5 @@ module.exports = {
       xl: '1440px',
     },
   },
-  plugins: [require('@tailwindcss/forms')],
+  plugins: [require('@tailwindcss/forms', 'tw-elements-react/dist/plugin.cjs')],
 };

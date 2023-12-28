@@ -3,11 +3,11 @@ import { card5 } from '../assets';
 
 const Cart = () => {
   return (
-    <section className="mt-32 ">
+    <section className="mt-32">
       <h1 className="flex justify-start px-12  text-[56px] text-gray-700 font-semibold">
         MY CART
       </h1>
-      <div className="flex justify-between  items-center px-12 -mt-72 relative">
+      <div className="flex justify-between  items-center px-12 -mt-[350px] relative">
         {/* First div */}
         <div className="border border-gray-500 border-4 w-2/3 p-4 rounded-[50px]">
           <div className="flex justify-between items-center mx-auto">
@@ -48,8 +48,8 @@ const Cart = () => {
           </div>
         </div>
         {/* Second div */}
-        <div className="flex flex-col w-1/3 p-4 mt-72 relative">
-          <div className="border border-gray-500 border-4 rounded-[50px] py-4 mb-4 ">
+        <div className="flex flex-col w-1/3 p-4 mt-56">
+          <div className="border border-gray-500 border-4 rounded-[50px] py-4 mb-4 mt-56">
             <div className="flex justify-start p-4">
               <p className="py-2 px-4 border border-gray-700 border-4 rounded-[50px] font-bold text-[12px]">
                 PROMO CODE?
